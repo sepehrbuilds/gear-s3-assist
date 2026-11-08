@@ -1,6 +1,6 @@
 {
   "prepared_at": "2026-11-08",
-  "status": "review candidate; no repository created, pushed or published",
+  "status": "pre-publication release check of the initial source reference",
   "source_archive_sha256": "444f40b064a4f7660a9bd459bf652e1d25ebfc4aaa709957a0e252dfa16725b0",
   "original_manifest_verified_files": 58,
   "watch_host_tests": [
