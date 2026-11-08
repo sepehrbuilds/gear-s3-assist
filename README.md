@@ -10,7 +10,7 @@ I turned an old Samsung Gear S3 Frontier into a push-to-talk remote for my home.
 
 Built with AI coding agents: implementation and software verification used OpenAI Codex; I performed the physical testing on the watch. See [implementation credits](docs/REFERENCES.md).
 
-https://github.com/user-attachments/assets/bed925f5-c973-4e3b-9d6e-8f0409d5ac30
+https://github.com/user-attachments/assets/2a8b9d1c-7862-4114-89c7-7216f2e55850
 
 ## Who this is for
 
