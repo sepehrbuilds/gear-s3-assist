@@ -16,7 +16,15 @@ uv pip install --python .venv/bin/python -r requirements-tested.txt
 
 `requirements-tested.txt` pins the dependency closure to the versions used for the successful public-export tests. The pyproject describes the direct dependencies; updating its transitive dependencies is a separate compatibility change.
 
+## Tests
+
 Tests bind local sockets and use synthetic fake HA/TV/TTS services. They never need a real HA token or cloud model key. ffmpeg enables the actual MP3 decoder fixture.
+
+- The watch-side control test (`node test-control.js` in the repository root) needs free loopback port 8765.
+- Python tests use temporary loopback listeners and synthetic child processes.
+- Run this suite on macOS: the ASR process-ownership checks use `/usr/sbin/lsof`.
+- The optional real-certificate TLS test skips unless certificate paths are explicitly supplied.
+- The host tests run on modern Node (CI uses 22); the deployed watch runtime is the legacy Node 4.4.3.
 
 ## Offline policy example
 
