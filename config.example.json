@@ -1,0 +1,9 @@
+{
+  "host": "192.0.2.10",
+  "port": 8586,
+  "caPath": "/opt/usr/gear-ptt/server.crt",
+  "pin": "0000000000000000000000000000000000000000000000000000000000000000",
+  "token": "REPLACE_WITH_PRIVATE_BACKEND_TOKEN",
+  "controlToken": "REPLACE_WITH_43_CHAR_PRIVATE_CONTROL_TOKEN",
+  "maxSeconds": 20
+}

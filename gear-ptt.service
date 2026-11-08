@@ -1,0 +1,25 @@
+[Unit]
+Description=Gear S3 standalone push-to-talk client
+Requires=gear-ptt-policy.service
+After=gear-ptt-policy.service network.target
+
+[Service]
+Type=simple
+User=owner
+Group=users
+SupplementaryGroups=audio
+SmackProcessLabel=User::Pkg::GearPTT001
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+ProtectSystem=full
+PrivateTmp=yes
+MemoryLimit=96M
+LimitNOFILE=64
+WorkingDirectory=/opt/usr/gear-ptt
+Environment=HOME=/opt/usr/gear-ptt/run TMPDIR=/opt/usr/gear-ptt/run
+ExecStart=/opt/usr/gear-ptt/bash -c 'exec /opt/usr/gear-ptt/node --max-old-space-size=24 /opt/usr/gear-ptt/client.js /opt/usr/gear-ptt/config.json >> /opt/usr/gear-ptt/run/client.log 2>&1'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

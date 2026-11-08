@@ -1,0 +1,21 @@
+[project]
+name = "desk-stream"
+version = "0.1.0"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["aiohttp==3.13.3", "edge-tts==7.3.1", "pyatv==0.17.0", "numpy==2.2.6", "onnxruntime==1.22.1"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2", "pytest-asyncio==1.2.0"]
+
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["desk_stream"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

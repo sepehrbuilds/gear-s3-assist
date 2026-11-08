@@ -1,0 +1,61 @@
+{
+  "updated": "2026-11-08",
+  "scope": "One prepared Gear S3; current source export plus staged physical acceptance",
+  "watch": {
+    "model": "SM-R760",
+    "firmware": "FVG1",
+    "tizen": "4.0.0.7",
+    "ui_version": "1.2.0",
+    "node": "4.4.3",
+    "native_capture": "16kHz mono PCM16LE via ALSA",
+    "pin_and_token_rejection_tested": true,
+    "nonroot_zero_capabilities_verified": true,
+    "sdb_disconnected_physical_turn_accepted": true,
+    "earlier_watch_reboot_autostart_verified": true,
+    "latest_entire_stack_reboot_retested": false,
+    "latest_stack_sdb_disconnected_retested": false
+  },
+  "physical_features_accepted": [
+    "lights_and_compound_requests",
+    "tv_apps_hdmi",
+    "light_color_and_percentage_on_capable_devices",
+    "door_lock_only",
+    "general_homepod_reply",
+    "jev_route",
+    "streaming_homepod_reply_and_ready_recovery"
+  ],
+  "final_choices": {
+    "tts": "Edge in German English Persian",
+    "asr_warmup": true,
+    "asr_pause_preview": false,
+    "jev": "bounded decisions with Gemini fallback",
+    "local_tts_trials": "removed, not deployed"
+  },
+  "production_backend_tests": {
+    "passed": 192,
+    "skipped": 1
+  },
+  "cloud_synthetic": {
+    "paired_cases": 76,
+    "baseline_passed": 76,
+    "candidate_passed": 76,
+    "jev_accepted": 36,
+    "jev_accepted_median_ms": 181,
+    "baseline_corresponding_median_ms": 511,
+    "real_home_actions": false
+  },
+  "not_claimed": [
+    "universal installer",
+    "stock verified boot",
+    "full latest-stack reboot qualification",
+    "long soak",
+    "native streaming ASR",
+    "native HomePod AI",
+    "zero latency"
+  ],
+  "license": {
+    "selected": "MIT",
+    "scope": "project-owned code and documentation; third-party terms unchanged",
+    "copyright": "2026 Sepehr (sepehrbuilds)"
+  }
+}

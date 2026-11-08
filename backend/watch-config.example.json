@@ -1,0 +1,228 @@
+{
+  "host": "127.0.0.1",
+  "port": 8586,
+  "token_env": "GEAR_STREAM_TOKEN",
+  "tls_cert": ".state/server.crt",
+  "tls_key": ".state/server.key",
+  "vad_model": "models/silero_vad.onnx",
+  "asr_url": "http://127.0.0.1:8584/inference",
+  "asr_language": "auto",
+  "partial_interval": 0,
+  "endpoint_silence": 0.7,
+  "max_record_seconds": 20,
+  "provider": "openai-compatible",
+  "llm_url": "https://openrouter.ai/api/v1",
+  "model": "google/gemini-3.1-flash-lite",
+  "api_key_env": "GEAR_LLM_API_KEY",
+  "llm_timeout": 20,
+  "llm_keep_alive_seconds": 60,
+  "max_reply_chars": 1800,
+  "history_pairs": 4,
+  "history_ttl": 900,
+  "playback": "watch",
+  "tts_url": "http://127.0.0.1:8583",
+  "tts_token_env": "DESK_TTS_TOKEN",
+  "telemetry": "",
+  "ha_enabled": false,
+  "ha_url": "http://192.0.2.20:8123",
+  "ha_token_env": "GEAR_HA_TOKEN",
+  "ha_entities": [],
+  "watch_mode": true,
+  "max_tokens": 800,
+  "max_tool_calls": 1,
+  "watch_asr_warm": true,
+  "watch_asr_overlap": false,
+  "watch_tts_streaming": true,
+  "watch_jev_enabled": true,
+  "watch_jev_model": "~typesafe/jev-latest",
+  "cloud_provider_options": {
+    "data_collection": "deny",
+    "sort": "latency"
+  },
+  "watch_targets": {
+    "bad": {
+      "label": "Bad",
+      "entities": [
+        "light.example_bathroom"
+      ],
+      "aliases": [
+        "bad",
+        "bathroom",
+        "bathroom light",
+        "چراغ حمام"
+      ]
+    },
+    "wohnzimmer": {
+      "label": "Wohnzimmer",
+      "entities": [
+        "light.example_ceiling",
+        "light.example_floor_lamp",
+        "light.example_tv_backlight"
+      ],
+      "aliases": [
+        "wohnzimmer",
+        "wohnzimmerlicht",
+        "wohnzimmerlichter",
+        "living room",
+        "living room lights",
+        "چراغ های پذیرایی"
+      ]
+    },
+    "deckenlampe": {
+      "label": "Deckenlampe",
+      "entities": [
+        "light.example_ceiling"
+      ],
+      "aliases": [
+        "deckenlampe",
+        "ceiling light",
+        "چراغ سقفی"
+      ]
+    },
+    "stehlampe": {
+      "label": "Stehlampe",
+      "entities": [
+        "light.example_floor_lamp"
+      ],
+      "aliases": [
+        "stehlampe",
+        "floor lamp",
+        "floor lamp basic",
+        "آباژور"
+      ]
+    },
+    "flur": {
+      "label": "Flur",
+      "entities": [
+        "light.example_hallway"
+      ],
+      "aliases": [
+        "flur",
+        "flurlicht",
+        "hallway",
+        "hallway light",
+        "چراغ راهرو"
+      ]
+    },
+    "kuche": {
+      "label": "Küche",
+      "entities": [
+        "light.example_kitchen_1",
+        "light.example_kitchen_2",
+        "light.example_kitchen_3"
+      ],
+      "aliases": [
+        "küche",
+        "küchenlichter",
+        "kitchen",
+        "kitchen lights",
+        "چراغ های آشپزخانه"
+      ]
+    },
+    "kuche_1": {
+      "label": "Küche 1",
+      "entities": [
+        "light.example_kitchen_1"
+      ],
+      "aliases": [
+        "küchenlicht 1",
+        "küchenlicht eins",
+        "kitchen light one",
+        "kitchen light 1",
+        "چراغ اول آشپزخانه"
+      ]
+    },
+    "kuche_2": {
+      "label": "Küche 2",
+      "entities": [
+        "light.example_kitchen_2"
+      ],
+      "aliases": [
+        "küchenlicht 2",
+        "küchenlicht zwei",
+        "kitchen light two",
+        "kitchen light 2",
+        "چراغ دوم آشپزخانه"
+      ]
+    },
+    "kuche_3": {
+      "label": "Küche 3",
+      "entities": [
+        "light.example_kitchen_3"
+      ],
+      "aliases": [
+        "küchenlicht 3",
+        "küchenlicht drei",
+        "kitchen light three",
+        "kitchen light 3",
+        "چراغ سوم آشپزخانه"
+      ]
+    },
+    "schlafzimmer": {
+      "label": "Schlafzimmer",
+      "entities": [
+        "light.example_bedroom"
+      ],
+      "aliases": [
+        "schlafzimmer",
+        "schlafzimmerlicht",
+        "bedroom",
+        "bedroom light",
+        "sleeping room",
+        "چراغ اتاق خواب"
+      ]
+    },
+    "tv_backlight": {
+      "label": "TV Backlight",
+      "entities": [
+        "light.example_tv_backlight"
+      ],
+      "aliases": [
+        "tv backlight",
+        "tv hintergrundlicht",
+        "tv-hintergrundlicht",
+        "fernsehbeleuchtung",
+        "نور پشت تلویزیون"
+      ]
+    }
+  },
+  "watch_onoff_only": [
+    "light.example_bathroom"
+  ],
+  "watch_light_capabilities": {
+    "light.example_floor_lamp": {
+      "brightness": true,
+      "rgb": true,
+      "min_kelvin": 2000,
+      "max_kelvin": 9000
+    },
+    "light.example_tv_backlight": {
+      "brightness": true,
+      "rgb": true,
+      "min_kelvin": 2000,
+      "max_kelvin": 9000
+    }
+  },
+  "watch_devices": {
+    "door": {
+      "label": "Front door",
+      "entity": "lock.example_front_door"
+    },
+    "tv": {
+      "label": "TV",
+      "entity": "media_player.example_tv",
+      "rest_url": "http://192.0.2.40:8001",
+      "apps": {
+        "youtube": {
+          "id": "REPLACE_WITH_VERIFIED_YOUTUBE_APP_ID",
+          "label": "YouTube"
+        },
+        "jellyfin": {
+          "id": "REPLACE_WITH_VERIFIED_JELLYFIN_APP_ID",
+          "label": "Jellyfin"
+        }
+      },
+      "sources": {}
+    }
+  }
+}

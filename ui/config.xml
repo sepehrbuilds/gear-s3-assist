@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://local.gearptt/app" version="1.2.0" viewmodes="maximized">
+  <tizen:application id="GearPTT001.Main" package="GearPTT001" required_version="2.3"/>
+  <content src="index.html"/>
+  <icon src="icon.png"/>
+  <name>Gear PTT</name>
+  <access origin="http://127.0.0.1:8765" subdomains="false"/>
+  <access origin="ws://127.0.0.1:8765" subdomains="false"/>
+  <tizen:privilege name="http://tizen.org/privilege/internet"/>
+  <tizen:privilege name="http://tizen.org/privilege/power"/>
+  <tizen:profile name="wearable"/>
+  <feature name="http://tizen.org/feature/screen.shape.circle" required="true"/>
+  <tizen:content-security-policy>default-src 'self'; connect-src ws://127.0.0.1:8765; style-src 'self'; script-src 'self'; img-src 'self' data:</tizen:content-security-policy>
+  <tizen:setting screen-orientation="portrait" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>

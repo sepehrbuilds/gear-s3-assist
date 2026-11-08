@@ -1,0 +1,147 @@
+{
+  "bad": {
+    "label": "Bad",
+    "entities": [
+      "light.example_bathroom"
+    ],
+    "aliases": [
+      "bad",
+      "bathroom",
+      "bathroom light",
+      "چراغ حمام"
+    ]
+  },
+  "wohnzimmer": {
+    "label": "Wohnzimmer",
+    "entities": [
+      "light.example_ceiling",
+      "light.example_floor_lamp",
+      "light.example_tv_backlight"
+    ],
+    "aliases": [
+      "wohnzimmer",
+      "wohnzimmerlicht",
+      "wohnzimmerlichter",
+      "living room",
+      "living room lights",
+      "چراغ های پذیرایی"
+    ]
+  },
+  "deckenlampe": {
+    "label": "Deckenlampe",
+    "entities": [
+      "light.example_ceiling"
+    ],
+    "aliases": [
+      "deckenlampe",
+      "ceiling light",
+      "چراغ سقفی"
+    ]
+  },
+  "stehlampe": {
+    "label": "Stehlampe",
+    "entities": [
+      "light.example_floor_lamp"
+    ],
+    "aliases": [
+      "stehlampe",
+      "floor lamp",
+      "floor lamp basic",
+      "آباژور"
+    ]
+  },
+  "flur": {
+    "label": "Flur",
+    "entities": [
+      "light.example_hallway"
+    ],
+    "aliases": [
+      "flur",
+      "flurlicht",
+      "hallway",
+      "hallway light",
+      "چراغ راهرو"
+    ]
+  },
+  "kuche": {
+    "label": "Küche",
+    "entities": [
+      "light.example_kitchen_1",
+      "light.example_kitchen_2",
+      "light.example_kitchen_3"
+    ],
+    "aliases": [
+      "küche",
+      "küchenlichter",
+      "kitchen",
+      "kitchen lights",
+      "چراغ های آشپزخانه"
+    ]
+  },
+  "kuche_1": {
+    "label": "Küche 1",
+    "entities": [
+      "light.example_kitchen_1"
+    ],
+    "aliases": [
+      "küchenlicht 1",
+      "küchenlicht eins",
+      "kitchen light one",
+      "kitchen light 1",
+      "چراغ اول آشپزخانه"
+    ]
+  },
+  "kuche_2": {
+    "label": "Küche 2",
+    "entities": [
+      "light.example_kitchen_2"
+    ],
+    "aliases": [
+      "küchenlicht 2",
+      "küchenlicht zwei",
+      "kitchen light two",
+      "kitchen light 2",
+      "چراغ دوم آشپزخانه"
+    ]
+  },
+  "kuche_3": {
+    "label": "Küche 3",
+    "entities": [
+      "light.example_kitchen_3"
+    ],
+    "aliases": [
+      "küchenlicht 3",
+      "küchenlicht drei",
+      "kitchen light three",
+      "kitchen light 3",
+      "چراغ سوم آشپزخانه"
+    ]
+  },
+  "schlafzimmer": {
+    "label": "Schlafzimmer",
+    "entities": [
+      "light.example_bedroom"
+    ],
+    "aliases": [
+      "schlafzimmer",
+      "schlafzimmerlicht",
+      "bedroom",
+      "bedroom light",
+      "sleeping room",
+      "چراغ اتاق خواب"
+    ]
+  },
+  "tv_backlight": {
+    "label": "TV Backlight",
+    "entities": [
+      "light.example_tv_backlight"
+    ],
+    "aliases": [
+      "tv backlight",
+      "tv hintergrundlicht",
+      "tv-hintergrundlicht",
+      "fernsehbeleuchtung",
+      "نور پشت تلویزیون"
+    ]
+  }
+}

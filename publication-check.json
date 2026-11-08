@@ -1,0 +1,57 @@
+{
+  "prepared_at": "2026-11-08",
+  "status": "review candidate; no repository created, pushed or published",
+  "source_archive_sha256": "444f40b064a4f7660a9bd459bf652e1d25ebfc4aaa709957a0e252dfa16725b0",
+  "original_manifest_verified_files": 58,
+  "watch_host_tests": [
+    "test-core.js passed",
+    "test-control.js passed"
+  ],
+  "backend_export_tests": {
+    "passed": 192,
+    "skipped": 1,
+    "seconds": 12.44,
+    "optional_skip": "external real-certificate fixture: explicit cert/key paths not supplied"
+  },
+  "offline_example": "passed; exact expected-output comparison; no execution or network client",
+  "dependency_consistency": "uv pip check passed",
+  "json_parse": "passed",
+  "markdown_local_links": "passed",
+  "private_locator_artifact_candidates": 0,
+  "gitleaks": {
+    "version": "8.30.1",
+    "findings": 0,
+    "scope": "clean public candidate; default rules; redacted report"
+  },
+  "exact_private_credential_comparison": "not repeated; no private production credentials accessed",
+  "hardware_and_cloud_integration": "not rerun; original owner acceptance remains historical evidence",
+  "github_actions": "workflow expanded to include macOS backend and offline example; remote execution pending first authorized push",
+  "license": {
+    "selected": "MIT",
+    "owner_authorized": true,
+    "scope": "project-owned code and documentation",
+    "copyright": "2026 Sepehr (sepehrbuilds)",
+    "backend_metadata": "LICENSE file included; same MIT text as root"
+  },
+  "production_changes": false,
+  "scope": "watch/backend runtime source unchanged; packaging, documentation, offline example, CI and owner-authorized MIT licensing only",
+  "licensing_checks": {
+    "root_backend_license_identical": true,
+    "wheel_built": true,
+    "wheel_license_expression": "MIT",
+    "wheel_license_file_included": true,
+    "runtime_and_test_dependencies_unchanged": true,
+    "dependency_inventory_rows_unchanged": true,
+    "watch_backend_ui_runtime_source_unchanged": true,
+    "copyright": "2026 Sepehr (sepehrbuilds)",
+    "regression_tests": "prior 192 passed/1 skip plus both Node tests; not repeated for documentation-only revisions"
+  },
+  "test_environment": {
+    "platform": "macOS arm64",
+    "python": "3.13.18",
+    "node": "26.13.0",
+    "ffmpeg": "9.0.2",
+    "python_distributions": 45
+  },
+  "documentation_review": "README clarifies rooting, Jev, AI-assisted implementation and historical hardware scope; icon provenance evidence retained in private review only"
+}

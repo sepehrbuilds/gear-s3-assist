@@ -1,0 +1,21 @@
+{
+  "mode": "validation_only",
+  "executed": false,
+  "light_plan": [
+    {
+      "target": "stehlampe",
+      "entity": "light.example_floor_lamp",
+      "service": "light/turn_on",
+      "data": {
+        "brightness_pct": 35
+      },
+      "expected": {
+        "state": "on",
+        "brightness_pct": 35
+      },
+      "label": "Stehlampe",
+      "value": "35%"
+    }
+  ],
+  "unlock_rejected": true
+}

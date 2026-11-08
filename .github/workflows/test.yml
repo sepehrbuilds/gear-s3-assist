@@ -1,0 +1,28 @@
+name: Source tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  watch-host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node test-core.js
+      - run: node test-control.js
+  backend:
+    runs-on: macos-14
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r requirements-tested.txt
+      - run: if ! command -v ffmpeg >/dev/null; then brew install ffmpeg; fi
+      - run: python examples/dry_run.py > actual-dry-run.json && diff -u examples/dry-run-output.json actual-dry-run.json
+      - run: python -m pytest -q -ra

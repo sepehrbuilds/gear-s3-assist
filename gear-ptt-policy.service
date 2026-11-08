@@ -1,0 +1,14 @@
+[Unit]
+Description=Gear PTT private app trust overlay and dedicated SMACK rules
+Before=gear-ptt.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=root
+Group=root
+SmackProcessLabel=System::Privileged
+ExecStart=/bin/sh /opt/usr/gear-ptt/policy/apply-policy.sh
+
+[Install]
+WantedBy=multi-user.target
