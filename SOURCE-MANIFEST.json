@@ -2,7 +2,7 @@
   "algorithm": "sha256",
   "scope": "clean release candidate; excludes this manifest itself",
   "files": {
-    ".github/workflows/test.yml": "2e14b0d2adab4d2f5b79d6c1bf5686e61de794572eb172147031342f01d8afa4",
+    ".github/workflows/test.yml": "3c7ae96ae1534ec6c10dca79569870028ce9ccd1e2918f1e359d18676fc7a142",
     ".gitignore": "7fe2273146e95ef7e2dd057d236f6d84b5f12a3eaf92f23ee1fd52258927a7b8",
     "LICENSE": "117b05f8fc077d286545c79d3815da15be12bf5ce2c498a732dfbf10f7f50890",
     "README.md": "c76282933045f5e42b84db4e3a03e06d11534cc546b3efa8b39aa79e8bb1ee59",

@@ -13,7 +13,7 @@ jobs:
       - run: node test-core.js
       - run: node test-control.js
   backend:
-    runs-on: macos-14
+    runs-on: macos-latest
     defaults:
       run:
         working-directory: backend
