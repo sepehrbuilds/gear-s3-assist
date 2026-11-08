@@ -1,5 +1,9 @@
 # Verification record
 
+## Dependency security update — 2026-11-08
+
+After GitHub Dependabot flagged the original pins, the tested set was updated: aiohttp 3.14.4, certifi 2026.10.18, urllib3 2.8.0, multidict 6.9.1, yarl 1.25.1, pytest 9.0.3 and pytest-asyncio 1.4.1.post1. The other 38 pins are unchanged. In a fresh macOS arm64 / Python 3.13 environment, `uv pip check` passed, both Node host tests passed, the offline example matched its expected output, and the backend suite gave **192 passed, one optional TLS skip**. The counts in the sections below refer to the earlier pins. The deployed watch backend is updated separately; this record does not cover it.
+
 ## Clean-copy rerun — 2026-11-08
 
 The supplied ZIP was extracted to a separate working copy after rejecting absolute/traversal paths and symlinks and enforcing entry/expanded-size bounds. All 58 entries in its original hash manifest matched. This rerun used macOS arm64, Python 3.13.18, Node 26.13.0 and ffmpeg 9.0.2, with the 45 pinned Python distributions installed into a fresh isolated environment.

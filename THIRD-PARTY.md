@@ -15,11 +15,11 @@ The table records metadata from the exact 45 distributions installed from `backe
 | Distribution | Version | Declared license metadata |
 | --- | --- | --- |
 | aiohappyeyeballs | 2.7.1 | Python Software Foundation License |
-| aiohttp | 3.13.3 | Apache-2.0 AND MIT |
+| aiohttp | 3.14.4 | Apache-2.0 AND MIT |
 | aiosignal | 1.4.0 | Apache Software License |
 | annotated-types | 0.8.0 | MIT |
 | attrs | 26.1.0 | MIT |
-| certifi | 2026.7.22 | Mozilla Public License 2.0 (MPL 2.0) |
+| certifi | 2026.10.18 | Mozilla Public License 2.0 (MPL 2.0) |
 | cffi | 2.1.1 | MIT-0 |
 | chacha20poly1305-reuseable | 0.13.2 | Metadata: Other/Proprietary; bundled LICENSE contains BSD-style and Apache-2.0 texts (review full file) |
 | charset-normalizer | 3.5.1 | MIT |
@@ -34,7 +34,7 @@ The table records metadata from the exact 45 distributions installed from `backe
 | iniconfig | 2.3.0 | MIT |
 | miniaudio | 1.71 | MIT License |
 | mpmath | 1.3.0 | BSD License |
-| multidict | 6.8.0 | Apache License 2.0 |
+| multidict | 6.9.1 | Apache License 2.0 |
 | numpy | 2.2.6 | BSD License |
 | onnxruntime | 1.22.1 | MIT License |
 | packaging | 26.3 | Apache-2.0 OR BSD-2-Clause |
@@ -46,8 +46,8 @@ The table records metadata from the exact 45 distributions installed from `backe
 | pydantic | 2.13.5 | MIT |
 | pydantic_core | 2.46.5 | MIT |
 | Pygments | 2.21.0 | BSD-2-Clause |
-| pytest | 8.4.2 | MIT License |
-| pytest-asyncio | 1.2.0 | Apache-2.0 |
+| pytest | 9.0.3 | MIT |
+| pytest-asyncio | 1.4.1.post1 | Apache-2.0 |
 | requests | 2.34.2 | Apache Software License |
 | six | 1.17.0 | MIT License |
 | srptools | 1.0.1 | BSD License |
@@ -56,8 +56,8 @@ The table records metadata from the exact 45 distributions installed from `backe
 | tinytag | 2.3.2 | MIT License |
 | typing-inspection | 0.4.4 | MIT |
 | typing_extensions | 4.16.0 | PSF-2.0 |
-| urllib3 | 2.7.0 | MIT |
-| yarl | 1.24.5 | Apache-2.0 |
+| urllib3 | 2.8.0 | MIT |
+| yarl | 1.25.1 | Apache-2.0 |
 | zeroconf | 0.151.3 | LGPL-2.1-or-later |
 
 `edge-tts` declares LGPLv3 and `zeroconf` LGPL-2.1-or-later; installing them does not relicense their code under this project's MIT license. Binary/app/environment redistribution would need a separate review of the exact bundled artifacts and notices. This release intentionally omits the virtual environment.
